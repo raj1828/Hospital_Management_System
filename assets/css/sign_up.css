@@ -162,3 +162,15 @@ form .button{
 .signup a:hover{
   text-decoration: underline;
 }
+.container h1{
+  color: white;
+  margin-top: 100px;
+}
+.button2 button{
+  color: white;
+  align-items: center;
+  background: #1DA1F2;
+  width: 100px;
+  height: 40px;
+  border-radius: 12px;
+}
