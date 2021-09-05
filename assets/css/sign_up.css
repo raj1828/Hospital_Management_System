@@ -37,6 +37,7 @@ header{
   width: 100%;
 }
 .input-field input{
+  color: white;
   height: 100%;
   width: 100%;
   border: 1px solid silver;
