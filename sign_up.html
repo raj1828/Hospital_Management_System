@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,35 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HMS-Sign Up</title>
-    <link rel="stylesheet" href="/assets/css/sign_up.css"> 
+    <link rel="stylesheet" href="assets/css/sign_up.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> 
 </head>
 <body>
       <!-- ==================Sign Up Form======================= -->
       <div class="container">
         <header>Sign Up Form</header>
-        <form>
+        <form action="sign_up.php" method="POST">
            <div class="input-field">
-              <input type="text" required>
-              <label>Email or Username</label>
+              <input type="text" required name="email" for="userEmail">
+              <label>Email</label>
            </div>
            <div class="input-field">
-              <input type="text" required>
+              <input type="text" required name="username" for="userUsername">
+              <label>Username</label>
+           </div>
+           <div class="input-field">
+              <input type="text" required name="phone" for="userPhone">
               <label>Phone Number</label>
            </div>
-           <div class="input-field">
-              <input class="pswrd" type="password" required>
+           <div class="input-field" >
+              <input class="pswrd" type="password" name="pass" for="userPass" required>
               <span class="show">SHOW</span>
               <label>Password</label>
            </div>
            <div class="input-field">
-              <input class="pswrd" type="password" required>
+              <input class="pswrd" type="password" required name="cpass" for="userCpass">
               <span class="show">SHOW</span>
               <label>Confirm Password</label>
            </div>
            <div class="button">
               <div class="inner"></div>
-              <button>Sign Up</button>
+              <button type="submit" name="Signup">Sign Up</button>
            </div>
         </form>
         <div class="auth">
@@ -48,7 +53,7 @@
            </div>
         </div>
         <div class="signup">
-           Already member? <a href="/sign_in.html">Login now</a>
+           Already member? <a href="sign_in.html">Login now</a>
         </div>
      </div>
       <!-- ==================Sign Up Form Ends======================= -->

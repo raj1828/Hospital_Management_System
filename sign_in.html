@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HMS-Sign In</title>
     <!-- <link rel="stylesheet" href="/assets/vendor/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="/assets/css/sign_up.css"> 
+    <link rel="stylesheet" href="assets/css/sign_up.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>   
 </head>
 <body>
@@ -15,19 +15,19 @@
       <!-- ==================Sign In Form==================== -->
       <div class="container">
         <header>Login Form</header>
-        <form>
+        <form action="sign_in.php" method="POST">
            <div class="input-field">
-              <input type="text" required>
-              <label>Email or Username</label>
+              <input type="text" name="username" required>
+              <label>Username</label>
            </div>
            <div class="input-field">
-              <input class="pswrd" type="password" required>
+              <input class="pswrd" type="password" name="nPassword" required>
               <span class="show">SHOW</span>
               <label>Password</label>
            </div>
-           <div class="button">
+           <div class="button" >
               <div class="inner"></div>
-              <button>LOGIN</button>
+              <button name="Signin">LOGIN</button>
            </div>
         </form>
         <div class="auth">
@@ -42,7 +42,7 @@
            </div>
         </div>
         <div class="signup">
-           Not a member? <a href="/sign_up.html">Signup now</a><br><a href="/forgot_pass.html">Forgot password?</a>
+           Not a member? <a href="sign_up.html">Signup now</a><br><a href="forgot_pass.html">Forgot password?</a>
         </div>
      </div>
 
