@@ -1,4 +1,6 @@
 <?php
+
+
     $uEmail = $_POST['email'];
     $uUsername = $_POST['username'];
     $uPhone = $_POST['phone'];
@@ -18,8 +20,16 @@
 	{
 		die('Could not connect'.mysqli_connect_error());
 	}
-	// $sql = "INSERT INTO admission(Sname,Semail,Susername,Spassword) VALUES ('$name_p','$email_p','$username_p','$password_p')";
-	$sql = "INSERT INTO `signup` (`email`, `username`, `phoneNum`, `pass`, `dt`) VALUES ('$uEmail', '$uUsername', '$uPhone', '$uPass', current_timestamp())";
+		
+	if($uPass == $cPass)
+	{
+		$sql = "INSERT INTO `signup` (`email`, `username`, `phoneNum`, `pass`, `dt`) VALUES ('$uEmail', '$uUsername', '$uPhone', '$uPass', current_timestamp())";
+	}
+	else
+	{
+		die('Confirm Password was Incorrect');
+		include 'sign_in.html';
+	}
 
 	if($conn->query($sql) == TRUE)
 	{
@@ -32,6 +42,7 @@
 	{
 		include 'sign_in.html';
 	}
+	
 	$conn -> close();
 }
 
