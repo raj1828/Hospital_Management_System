@@ -26,7 +26,10 @@
 		$sql= "insert into dr_review(Name,ID,Date,Time,Symptoms,Reports,Prescription) values ('$p_name', '$p_id', '$p_date', '$p_time', '$p_symptoms', '$p_reports', '$p_prescriptions')";
 		if($conn->query($sql) == true )
 		{
-			echo "Data has been added successfully!!";
+			echo "<script>";
+			echo "alert ('Your account was created successfully.')";
+			echo "</script>";
+			include 'dashboard.html';
 		}
 		else
 		{
