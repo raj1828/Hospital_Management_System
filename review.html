@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Doctor Review</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/review.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <section class="contact section" id="contact">
+    <div class="services__container container grid">
+      <div class="services__content">
+        <h2 class="section-title">Doctor Review</h2>
+
+        <div class="contact__container bd-grid">
+          <form action="assets/js/review.php" class="contact__form" method="POST">
+            <h6>Doctor Name</h6>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input type="text" name="name" class="form-control" placeholder="Name" aria-label="Username"
+                aria-describedby="basic-addon1" required>
+            </div>
+            <h6>Patient ID</h6>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input type="text" name="pid" class="form-control" placeholder="Patient ID" aria-label="Username"
+                aria-describedby="basic-addon1" required>
+            </div>
+            <h6>Date</h6>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input type="date" name="date" class="form-control" placeholder="Date" aria-label="Username"
+                aria-describedby="basic-addon1" required>
+            </div>
+            <h6>Time</h6>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input type="time" name="time" class="form-control" placeholder="Time" aria-label="Username"
+                aria-describedby="basic-addon1" required>
+            </div>
+            <h6>Symptoms</h6>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input type="text" name="symptoms" class="form-control" placeholder="Symptoms" aria-label="Username"
+                aria-describedby="basic-addon1" required>
+            </div>
+            <h6>Reports</h6>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input type="text" name="reports" class="form-control" placeholder="Reports" aria-label="Username"
+                aria-describedby="basic-addon1" required>
+            </div>
+            <h6>Prescription</h6>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+              </div>
+              <input type="text" name="prescription" class="form-control" placeholder="Prescription" aria-label="Username"
+                aria-describedby="basic-addon1" required>
+            </div>
+            <button type="submit" class="btn btn-outline-primary" name="Review">Submit</button>
+            <!-- <a href="login.html" style="margin-left: 7em;">Login instead?</a> -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
