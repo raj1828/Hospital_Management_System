@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Noto+Sans|Open+Sans:400,700&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css?family=Montserrat:600|Noto+Sans|Open+Sans:400,700&display=swap");
+* {
   margin: 0;
   padding: 0;
   border-radius: 5px;
   box-sizing: border-box;
   background: rgb(251, 252, 255);
 }
-body{
+body {
   height: 100vh;
   display: flex;
   align-items: center;
@@ -17,26 +17,27 @@ body{
   background-size: cover;
   background-position: center;
 }
-.container{
+.container {
   position: relative;
   height: 700px;
   width: 454px;
   background: hsl(0, 0%, 100%);
   padding: 60px 40px;
 }
-header{
-    color: rgb(19, 17, 17);
+header {
+  color: rgb(19, 17, 17);
   font-size: 40px;
   margin-bottom: 36px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-.input-field, form .button{
+.input-field,
+form .button {
   margin: 25px 0;
   position: relative;
   height: 50px;
   width: 100%;
 }
-.input-field input{
+.input-field input {
   color: rgb(7, 7, 7);
   height: 100%;
   width: 100%;
@@ -44,24 +45,25 @@ header{
   padding-left: 15px;
   outline: none;
   font-size: 19px;
-  transition: .4s;
+  transition: 0.4s;
 }
-input:focus{
-  border: 1px solid #1DA1F2;
+input:focus {
+  border: 1px solid #1da1f2;
 }
-.input-field label, span.show{
+.input-field label,
+span.show {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
-.input-field label{
+.input-field label {
   left: 15px;
   pointer-events: none;
   color: grey;
   font-size: 18px;
-  transition: .4s;
+  transition: 0.4s;
 }
-span.show{
+span.show {
   right: 20px;
   color: rgb(255, 254, 254);
   font-size: 14px;
@@ -69,37 +71,37 @@ span.show{
   cursor: pointer;
   user-select: none;
   visibility: hidden;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-input:valid ~ span.show{
+input:valid ~ span.show {
   visibility: visible;
 }
 input:focus ~ label,
-input:valid ~ label{
+input:valid ~ label {
   transform: translateY(-33px);
   background: rgb(253, 253, 255);
   font-size: 16px;
-  color: #1DA1F2;
+  color: #1da1f2;
 }
-form .button{
+form .button {
   margin-top: 30px;
   overflow: hidden;
   z-index: 111;
 }
-.button .inner{
+.button .inner {
   position: absolute;
   height: 100%;
   width: 300%;
   left: -100%;
   z-index: -1;
-  transition: all .4s;
-  background: #1DA1F2;
+  transition: all 0.4s;
+  background: #1da1f2;
 }
-.button:hover{
+.button:hover {
   left: 0;
   border: #1f95df;
 }
-.button button{
+.button button {
   width: 100%;
   height: 100%;
   border: none;
@@ -108,66 +110,69 @@ form .button{
   color: white;
   font-size: 20px;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-.container .auth{
+.container .auth {
   margin: 35px 0 20px 0;
   font-size: 19px;
   color: grey;
 }
-.links{
+.links {
   display: flex;
   cursor: pointer;
 }
-.facebook, .google{
+.facebook,
+.google {
   height: 40px;
   width: 100%;
   border: 1px solid silver;
   border-radius: 3px;
   margin: 0 10px;
-  transition: .4s;
+  transition: 0.4s;
 }
-.facebook:hover{
-  border: 1px solid #4267B2;
+.facebook:hover {
+  border: 1px solid #4267b2;
 }
-.google:hover{
+.google:hover {
   border: 1px solid #dd4b39;
 }
-.facebook i, .facebook span{
-  color: #4267B2;
+.facebook i,
+.facebook span {
+  color: #4267b2;
 }
-.google i, .google span{
+.google i,
+.google span {
   color: #dd4b39;
 }
-.links i{
+.links i {
   font-size: 23px;
   line-height: 40px;
   margin-left: -90px;
 }
-.links span{
+.links span {
   position: absolute;
   font-size: 17px;
   font-weight: bold;
   padding-left: 8px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
-.signup{
-    color: rgb(12, 12, 12);
+.signup {
+  color: rgb(12, 12, 12);
   margin-top: 50px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
-.signup a{
+.signup a {
   color: #3498db;
   text-decoration: none;
 }
-.signup a:hover{
+.signup a:hover {
   text-decoration: underline;
 }
-.container h1{
+.container h1 {
   color: rgb(0, 0, 0);
   margin-top: 100px;
 }
-.button2 button{
+.button2 button {
   color: rgb(255, 255, 255);
   align-items: center;
   background: #1da1f2;
@@ -178,6 +183,3 @@ form .button{
   border-radius: 9px;
   cursor: pointer;
 }
-
-
-
