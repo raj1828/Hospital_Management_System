@@ -1,63 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-body
-{
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
 }
-.section-title{
-    position: relative;
-    font-size: 2rem;
-    color: #007BFF;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-  .section{
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-  }
-  .bd-grid{
-    max-width: 1024px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-column-gap: 2rem;
-    width: calc(100% - 2rem);
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  .contact__form{
-    width: 360px;
-  }
-  .contact__container{
-    justify-items: center;
-  }
-  .tag__text{
-    font-size: 1rem;
-    color: #007BFF;
-    margin: 0 9rem;
-  }
-  .services__container
-{
-    gap: 2.5rem;
-    grid-template-columns: repeat(2, 2fr);
+.section-title {
+  position: relative;
+  font-size: 2rem;
+  color: #007bff;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
-.services__content
-{
-    position: relative;
-    background-color: #FFF;
-    padding: 3.5rem .5rem 1.25rem 1.5rem;
-    padding-bottom: 4rem;
-    border-radius: .25rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
-    transition: .3s;
+.section {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
-.services__content:hover
-{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+.bd-grid {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
-  @media screen and (min-width: 1024px){
-    .bd-grid{
-      margin-left: auto;
-      margin-right: auto;
-    }
+.contact__form {
+  width: 360px;
+}
+.contact__container {
+  justify-items: center;
+}
+.tag__text {
+  font-size: 1rem;
+  color: #007bff;
+  margin: 0 9rem;
+}
+.services__container {
+  gap: 2.5rem;
+  grid-template-columns: repeat(2, 2fr);
+}
+.services__content {
+  position: relative;
+  background-color: #fff;
+  padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+  padding-bottom: 4rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+.services__content:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
