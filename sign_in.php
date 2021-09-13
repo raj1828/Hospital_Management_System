@@ -16,22 +16,40 @@ if(isset($_POST['Signin']))
 	{
 		die('Could not connect'.mysqli_connect_error());
 	}
-	$sql = "SELECT * FROM signup WHERE username='$lUsername' AND pass='$lPassword'";
+	$sql = "SELECT * FROM signup WHERE username='$lUsername' AND pass='$lPassword' AND uPost='doctor'";
 	$result = mysqli_query($conn,$sql);
 
 	if($row = mysqli_fetch_array($result))
 	{
         session_start();
 
-		include 'dashboard.html';
+		include 'dr_dashboard.html';
 	}
-	else
+	else if(!$row = mysqli_fetch_array($result))
 	{
-		echo "<script>";
-		echo "alert ('Incorrect Username or password')";
-		echo "</script>";
-		include 'sign_in.html';
+		$sql = "SELECT * FROM signup WHERE username='$lUsername' AND pass='$lPassword' AND uPost='receptionist'";
+		$result = mysqli_query($conn,$sql);
+		if($row = mysqli_fetch_array($result))
+		{
+        	session_start();
+
+			include 'dashboard.html';
+		}
+		else
+	 	{
+	 		echo "<script>";
+	 		echo "alert ('Incorrect Username or password')";
+	 		echo "</script>";
+	 		include 'sign_in.html';
+		}
 	}
+	// else
+	// {
+	// 	echo "<script>";
+	// 	echo "alert ('Incorrect Username or password')";
+	// 	echo "</script>";
+	// 	include 'sign_in.html';
+	// }
 	$conn -> close();
 }
 

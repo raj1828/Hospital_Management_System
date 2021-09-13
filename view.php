@@ -23,12 +23,47 @@
                     <thead>
                         <tr>
                             <th>Patient ID</th>
-                            <th>Name</th>
-                            <th>Emergency Phone Number</th>
                             <th>Name of Doctor</th>
+                            <th>Symptoms</th>
+                            <th>Reports</th>
+                            <th>Prescription</th>
+                            <th>Date</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <?php
+
+                       $servername="localhost";
+                       $username="root";
+                       $password="";
+                       $dbname="hms";
+
+                       $conn=new mysqli($servername,$username,$password,$dbname);
+
+                       $selectquery = "SELECT * FROM dr_review";
+
+                       $query = mysqli_query($conn,$selectquery);
+
+                       $nums = mysqli_num_rows($query);
+
+
+                       while($res = mysqli_fetch_array($query))
+                       {   
+                        ?>                   
+                           <tr>
+                            <td><?php echo $res['ID']; ?></td>
+                            <td><?php echo $res['Name']; ?></td>
+                            <td><?php echo $res['Symptoms']; ?></td>
+                            <td><?php echo $res['Reports']; ?></td>
+                            <td><?php echo $res['Prescription']; ?></td>
+                            <td><?php echo $res['Date']; ?></td>
+                        </tr>
+
+                        <?php
+                        
+                        }      
+
+                        ?>                 
                     </tbody>
                 </table>
             </div>

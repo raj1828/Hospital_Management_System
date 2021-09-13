@@ -12,19 +12,19 @@
 <body>
    <div class="container marg">
       <h1>Delete Patient</h1>
-      <form>
+      <form action="delete.php" method="POST">
          <div class="input-field ">
-            <input type="text" required>
+            <input type="text" name="dId" required>
             <label>Patient ID</label>
          </div>
-      </form>
-      <!-- <div class="button">
+         <!-- <div class="button">
             <div class="inner"></div>
             <button>Sign Up</button>
          </div> -->
-      <div class="button2">
-         <button>Delete Record</button>
-      </div>
+         <div class="button2">
+            <button type="submit" name="Delete">Delete Record</button>
+         </div>
+      </form>
       <!-- <div class="signup">
            Already member? <a href="/sign_in.html">Login now</a>
         </div> -->

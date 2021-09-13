@@ -183,3 +183,16 @@ form .button {
   border-radius: 9px;
   cursor: pointer;
 }
+select{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 1px solid silver;
+  padding-left: 15px;
+  outline: none;
+  font-size: 19px;
+}
+select:focus {
+  border: 1px solid #1da1f2;
+  color: #1da1f2;
+}

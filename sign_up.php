@@ -1,6 +1,7 @@
 <?php
 
 
+    $u_Post = $_POST['userPost'];
     $uEmail = $_POST['email'];
     $uUsername = $_POST['username'];
     $uPhone = $_POST['phone'];
@@ -23,7 +24,7 @@
 		
 	if($uPass == $cPass)
 	{
-		$sql = "INSERT INTO `signup` (`email`, `username`, `phoneNum`, `pass`, `dt`) VALUES ('$uEmail', '$uUsername', '$uPhone', '$uPass', current_timestamp())";
+		$sql = "INSERT INTO `signup` (`upost`,`email`, `username`, `phoneNum`, `pass`, `dt`) VALUES ('$u_Post', '$uEmail', '$uUsername', '$uPhone', '$uPass', current_timestamp())";
 	}
 	else
 	{

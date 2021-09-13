@@ -16,6 +16,13 @@
       <header>Sign Up Form</header>
       <form action="sign_up.php" method="POST">
          <div class="input-field">
+            <select name="userPost" id="">
+               <option value="">--- Select post ---</option>
+               <option value="doctor">Doctor</option>
+               <option value="receptionist">Receptionist</option>
+            </select>
+         </div>
+         <div class="input-field">
             <input type="text" required name="email" for="userEmail">
             <label>Email</label>
          </div>
@@ -47,7 +54,7 @@
       </div>
       <div class="links">
          <div class="facebook">
-            <i class="fab fa-facebook-square"><span>Facebook</span></i>
+            <i class="fab fa-facebook-square"><span><div >Facebook</div></span></i>
          </div>
          <div class="google">
             <i class="fab fa-google-plus-square"><span>Google</span></i>
@@ -58,7 +65,6 @@
       </div>
    </div>
    <!-- ==================Sign Up Form Ends======================= -->
-
 </body>
 
 </html>
