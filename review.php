@@ -27,7 +27,7 @@
 		if($conn->query($sql) == true )
 		{
 			echo "<script>";
-			echo "alert ('Your account was created successfully.')";
+			echo "alert ('Record Added Successfully.')";
 			echo "</script>";
 			include 'dashboard.html';
 		}
